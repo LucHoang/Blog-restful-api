@@ -44,9 +44,9 @@ public class BlogController {
         return new ResponseEntity<>(blogs, HttpStatus.OK);
     }
 
-    @GetMapping("/categoryName/{categoryId}")
-    public ResponseEntity<Iterable<Blog>> findBlogByCategoryId(@PathVariable String categoryId) {
-        List<Blog> blogs = (List<Blog>) blogService.findAllByCategoryName(categoryId);
+    @GetMapping("/categoryName")
+    public ResponseEntity<Iterable<Blog>> findBlogByCategoryId(@RequestParam("name") String categoryName) {
+        List<Blog> blogs = (List<Blog>) blogService.findAllByCategoryName(categoryName);
         if (blogs.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }

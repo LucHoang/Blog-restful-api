@@ -10,9 +10,9 @@ com/hsl/model/Category.java
  com.hsl.model.Category
 com/hsl/repository/IBlogRepository.java
  com.hsl.repository.IBlogRepository
-com/hsl/controller/BlogController.java
- com.hsl.controller.BlogController
-com/hsl/service/IBlogService.java
- com.hsl.service.IBlogService
 com/hsl/service/BlogService.java
  com.hsl.service.BlogService
+com/hsl/service/IBlogService.java
+ com.hsl.service.IBlogService
+com/hsl/controller/BlogController.java
+ com.hsl.controller.BlogController
