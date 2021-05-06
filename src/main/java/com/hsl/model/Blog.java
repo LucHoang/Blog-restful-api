@@ -25,7 +25,7 @@ public class Blog {
     private Date datePostNew;
     private Long categoryId;
 
-    @JsonManagedReference
+//    @JsonManagedReference
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
@@ -50,6 +50,14 @@ public class Blog {
         this.author = author;
         this.datePostNew = datePostNew;
         this.categoryId = categoryId;
+        this.category = category;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
         this.category = category;
     }
 

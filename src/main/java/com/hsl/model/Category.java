@@ -14,26 +14,26 @@ public class Category {
 
     private String name;
 
-    @JsonBackReference
-    @OneToMany(targetEntity = Blog.class)
-    private List<Blog> blogs;
+//    @JsonBackReference
+//    @OneToMany(targetEntity = Blog.class)
+//    private List<Blog> blogs;
 
     public Category() {
     }
 
-    public List<Blog> getBlogs() {
-        return blogs;
-    }
-
-    public void setBlogs(List<Blog> blogs) {
-        this.blogs = blogs;
-    }
-
-    public Category(Long id, String name, List<Blog> blogs) {
-        this.id = id;
-        this.name = name;
-        this.blogs = blogs;
-    }
+//    public List<Blog> getBlogs() {
+//        return blogs;
+//    }
+//
+//    public void setBlogs(List<Blog> blogs) {
+//        this.blogs = blogs;
+//    }
+//
+//    public Category(Long id, String name, List<Blog> blogs) {
+//        this.id = id;
+//        this.name = name;
+//        this.blogs = blogs;
+//    }
 
     public Category(Long id, String name) {
         this.id = id;
